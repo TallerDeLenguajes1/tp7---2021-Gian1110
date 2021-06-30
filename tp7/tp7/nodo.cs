@@ -1,16 +1,16 @@
 ﻿using System;
-namespace tp6
+namespace tp7
 {
     public class nodo
     {
         private int Numero1;
-        private int Numero2;
-        private char operador;
-        private int Resultado;
+        private float Numero2;
+        private int operador;
+        private float Resultado;
         private DateTime dia_hora;
         private nodo siguiente;
 
-        public nodo(int numero1, int numero2, char Operador, int resultado, DateTime Dia_hora)
+        public nodo(int numero1, float numero2, int Operador, float resultado, DateTime Dia_hora)
         {
             Numero1 = numero1;
             Numero2 = numero2;
@@ -25,7 +25,7 @@ namespace tp6
             get => Numero1;
             set => Numero1 = value;
         }
-        public int Numero21
+        public float Numero21
         {
             get => Numero2;
             set => Numero2 = value;
@@ -39,12 +39,12 @@ namespace tp6
             get => siguiente;
             set => siguiente = value;
         }
-        public char Operador
+        public int Operador
         {
             get => operador;
             set => operador = value;
         }
-        public int Resultado1
+        public float Resultado1
         {
             get => Resultado;
             set => Resultado = value;
